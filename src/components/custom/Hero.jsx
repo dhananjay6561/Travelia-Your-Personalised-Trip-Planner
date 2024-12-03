@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '../ui/button';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
@@ -13,8 +14,9 @@ function HeroSection() {
         <p className='text-xl text-gray-500 text-center'>
           Let AI craft your perfect itinerary so you can focus on the adventure ahead.
         </p>
-
-        <Button>Get Started Right Now </Button>
+        <Link to={'/newtrip'}>
+          <Button>Get Started Right Now </Button>
+        </Link>
        
     </div>
   );
